@@ -5,8 +5,8 @@
 - Nome: Dione Willy Evangelista
 - Matrícula: 18.1.8162
 - Curso: Sistemas de Informação
-- Semestre/Ano correntes: Quarto ano
-- Link para o seu GitHub: https://github.com/dioneEvangelista
+- Semestre/Ano correntes: 2022/02
+- Link para o seu GitHub: [dioneEvangelista](https://github.com/dioneEvangelista)
 
 ## [Projeto final:](./Projeto/README.md)
 
