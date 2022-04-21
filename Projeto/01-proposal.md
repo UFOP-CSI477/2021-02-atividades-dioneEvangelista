@@ -59,4 +59,6 @@ Mais funcionalidades podem ser implementadas ou removidas durante o decorrer do 
 
 ### 5. Referências
 
-  Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT.
+PGB. Pesquisa Gamer Brasil, 2022. Página inicial. Disponível em: <https://www.pesquisagamebrasil.com.br/pt/>. Acesso em: 21 de Abril de 2022.
+
+Canva. 2022. Página inicial. Disponível em: <https://www.canva.com/pt_pt/>. Acesso em: 21 de Abril de 2022.
