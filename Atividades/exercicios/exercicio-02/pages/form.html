@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Página Form (Formulário) de um sistema de banco de dados, criada para o exercício 001 das atividades da máteria Sistemas Web I" />
+    <meta name="author" content="Dione Willy Evangelista" />
+    <link rel="stylesheet" href="../style.css" />
+
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="int">
+        <div class="int-content">
+            <div>
+                <img src="../img/database.png" alt="Database">
+            </div>
+            <div>
+                <h1>Relatório</h1>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/states.html">Estados</a></li>
+                    <li><a href="../pages/cities.html">Cidades</a></li>
+                    <li><a href="../pages/products.html">Produtos</a></li>
+                    <li><a href="../pages/people.html">Pessoas</a></li>
+                    <li><a href="../pages/shopping.html">Compras</a></li>
+                    <li><a href="../pages/profile.html">Perfil</a></li>
+                    <li><a href="../pages/form.html">Formulario</a></li>
+                    <li><a href="../pages/report.html">Relatório</a></li>
+                    <li><a href="../pages/logout.html">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div id="formulario">
+            <form method="post" id="cadastro_usuario" action="relatorio.html">
+                <fieldset id="nome">
+                    <legend>Nome</legend>
+                    <label for="pnome">Primeiro Nome:</label>
+                    <input type="text" id="pnome" name="pnome" placeholder="Digite seu primeiro nome" />
+                    <br>
+                    <label for="snome">Sobrenome:</label>
+                    <input type="text" id="snome" name="snome" placeholder="Digite seu sobrenome" />
+                </fieldset>
+                <div>
+                    <fieldset id="endereco">
+                        <legend>Endereço</legend>
+                        <label for="rua">Rua, Av, etc:</label>
+                        <input type="text" id="rua" name="rua" placeholder="Digite o nome da sua rua" />
+                        <br>
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" name="bairro" placeholder="Digite o nome do bairro" />
+                        <br>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" placeholder="Digite o nome do município" />
+                        <br>
+                        <label for="estado">Estado:</label>
+                        <input type="text" id="estado" name="estado" placeholder="Digite o nome do estado" />
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset id="contato">
+                        <legend>Contato</legend>
+                        <label for="tel">Telefone:</label>
+                        <input type="text" id="tel" name="tel" placeholder="Digite seu telefone de contato" />
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" />
+                    </fieldset>
+                </div>
+                <fieldset id="documentos">
+                    <legend>Documento</legend>
+                    <label for="doc">Documento:</label>
+                    <input type="file" id="doc" name="doc" />
+                </fieldset>
+                <div>
+                    <input type="button" value="Enviar dados!" />
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>Exercício em Sistemas Web I - Dione W.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
