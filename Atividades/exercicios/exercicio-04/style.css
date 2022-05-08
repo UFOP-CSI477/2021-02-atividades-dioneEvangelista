@@ -1,0 +1,18 @@
+:root{
+box-sizing: border-box;
+font-size: 62.5%;
+}
+
+body{
+background-color: black;
+color:white;
+}
+
+h1{
+  color:hsl(200,50%,50%)
+}
+div.data{
+  margin: 20px;
+  padding: 5px;
+  border: 1px solid white;
+}
