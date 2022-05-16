@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Dione Willy Evangelista">
+  <meta name="description" content="Homepage controlador Pix" />
+  <link rel="stylesheet" href="style.css">
+  <script src="pix.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  
+<header>
+  <div>
+  <h1>Controlador Pix</h1>
+  </div>
+  <div class="menu">
+    <nav>
+        <a href="index.html">Home</a>
+   </nav>
+  </div>
+</header>
+<main>
+<div>
+    <h1>Realize Envio ou Recebimento</h1>
+</div>
+
+<div id="painel-main">
+
+<div id="painel">
+<div class="ps">
+    <label for="tipo_chave">Escolha o tipo da sua chave PIX:</label>
+    <select
+      name="tipo_chave"
+      id="chave_tipo_s"
+    >
+      <option value="cpf">Cpf</option>
+      <option value="cnpj">CNPJ</option>
+      <option value="tel">Celular</option>
+      <option value="e-mail">E-mail</option>
+      <option value="chave_aleat">Chave Aleatória</option>
+    </select>
+</div>
+<div class="ps">
+  <label for="chave">Informe sua chave:</label>
+  <input type="text" name="chave" id="chave_pix">
+</div>
+<div class="ps">
+    <label for="tipo_transacao">Escolha o tipo de transação:</label>
+    <select
+      name="tipo_transacao"
+      id="trans_tipo_s"
+    >
+      <option value="enviar">Enviar PIX</option>
+      <option value="receber">Receber PIX</option>
+    </select>
+</div>
+<div class="ps">
+  <label for="valor">Informe o valor da transação:</label>
+  <input type="text" name="valor" id="valor_pix">
+</div>
+<div class="ps">
+  <label for="data">Informe a data da transação:</label>
+  <input type="date" name="data" id="data_pix">
+</div>
+<div class="ps">
+<label for="instituicao_finan">Escolha sua instituição financeira:</label>
+<select
+  name="instituicao_finan"
+  id="instituicao_finan_s"
+  onclick="carregarInstAPI()"
+  size="1"
+  style="width: 250px;"
+>
+  <option value="" id="inst_op">Selecione:</option>
+</select>
+</div>
+<div id="op_fim">
+  <input type="submit" value="Efetuar" onclick="efetuar()" id="efetuar"/>
+  <input type="submit" value="Ver Historico" onclick="processar_hist()" id="processar"/>
+</div>
+</div>
+
+<div id="painel_conta">
+  <h1>Painel da Conta</h1>
+
+<div id="pagar">
+  <p id="saldo_total_enviado">Saldo total de pix enviados:</p>
+</div>
+
+<div id="receber">
+  <p id="saldo_total_recebido">Saldo total de pix recebido:</p>
+</div>
+
+  <h3 id="saldo_total_movimentado"></h3>
+
+</div>
+
+</div>
+</main>
+<footer>
+  <div>
+    <p>
+      Criado por Dione W. Evangelista, by
+      <a href="https://github.com/dioneEvangelista">@Dione-Github</a>.
+    </p>
+  </div>
+</footer>
+
+  </div>
+</body>
+</html>
