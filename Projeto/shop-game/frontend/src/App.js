@@ -1,111 +1,41 @@
+import data from "./data";
+
 function App() {
   return (
-    <div class="grid-container">
-    <header class="row">
+    <div className="grid-container">
+    <header className="row">
       <div>
-        <a class="marca-site" href="index.html">Shop-Game</a>
+        <a className="marca-site" href="index.html">Shop-Game</a>
       </div>
       <div>
-        <a href="cart.html">Carrinho</a>
-        <a href="signin.html">Realizar login!</a>
+        <a href="/cart">Carrinho</a>
+        <a href="/signin">Realizar login!</a>
       </div>
     </header>
     <main>
-      <div class="row center">
-        <div class="quadro">
-          <a href="game.html">
-            <img class="medium" src="./images/f1.jpg" alt="game" />
+      <div className="row center">
+        { data.products.map((product) => (
+        <div key={product._id} className="card">
+       <a href={`/product/${product._id}`}>
+       <img
+                    className="medium"
+                    src={product.image}
+                    alt={product.name}
+                  />
+        </a>
+        <div className="card-body">
+        <a href={`/product/${product._id}`}>
+            <h2>{product.name}</h2>
           </a>
-          <div class="quadro-body">
-            <a href="game.html">
-              <h2>Forza Horizon 5</h2>
-            </a>
-            <div class="preco">
-              R$ 189,99
-            </div>
-          </div>
-        </div>
-        <div class="quadro">
-          <a href="game.html">
-            <img class="medium" src="./images/f2.jpg" alt="game" />
-          </a>
-          <div class="quadro-body">
-            <a href="game.html">
-              <h2>GTA V</h2>
-            </a>
-            <div class="preco">
-              R$ 99,90
-            </div>
-          </div>
-        </div>
-        <div class="quadro">
-          <a href="game.html">
-            <img class="medium" src="./images/f3.jpg" alt="game" />
-          </a>
-          <div class="quadro-body">
-            <a href="game.html">
-              <h2>The Witcher 3: Wild Hunt</h2>
-            </a>
-            <div class="preco">
-              R$ 60,00
-            </div>
-          </div>
-        </div>
-        <div class="quadro">
-          <a href="game.html">
-            <img class="medium" src="./images/f4.jpg" alt="game" />
-          </a>
-          <div class="quadro-body">
-            <a href="game.html">
-              <h2>The Legend of Zelda: Breath of The Wild</h2>
-            </a>
-            <div class="preco">
-              R$ 204,99
-            </div>
-          </div>
-        </div>
-        <div class="quadro">
-          <a href="game.html">
-            <img class="medium" src="./images/f5.jpg" alt="game" />
-          </a>
-          <div class="quadro-body">
-            <a href="game.html">
-              <h2>God of War</h2>
-            </a>
-            <div class="preco">
-              R$ 79,90
-            </div>
-          </div>
-        </div>
-        <div class="quadro">
-          <a href="game.html">
-            <img class="medium" src="images/f6.jpg" alt="game" />
-          </a>
-          <div class="quadro-body">
-            <a href="game.html">
-              <h2>The Last of Us: Part II</h2>
-            </a>
-            <div class="preco">
-              R$ 200,00
-            </div>
-          </div>
-        </div>
-        <div class="quadro">
-          <a href="game.html">
-            <img class="medium" src="./images/f7.jpg" alt="game" />
-          </a>
-          <div class="quadro-body">
-            <a href="game.html">
-              <h2>Hades</h2>
-            </a>
-            <div class="preco">
-              R$ 135,99
-            </div>
+          <div className="preco">
+          ${product.price}
           </div>
         </div>
       </div>
+        ))}
+      </div>
     </main>
-    <footer class="row center">Projeto desenvolvido em Sistemas Web I</footer>
+    <footer className="row center">Projeto desenvolvido em Sistemas Web I</footer>
   </div>
   );
 }
