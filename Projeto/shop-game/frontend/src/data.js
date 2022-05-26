@@ -36,7 +36,7 @@ const data = {
             _id: '2',
             name: 'GTA V',
             category: 'Ação',
-            image: '/images/f2.jpg',
+            image: './images/f2.jpg',
             price: 99.90,
             countInStock: 10,
             rating: 5.0,
