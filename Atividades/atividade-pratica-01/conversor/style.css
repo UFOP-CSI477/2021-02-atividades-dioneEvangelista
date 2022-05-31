@@ -1,0 +1,46 @@
+:root {
+  font-size: 62.5%;
+}
+body {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  color: white;
+  grid-template-columns: auto;
+  font-size: 1.6rem;
+  background: url(background-coins2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-conversor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px;
+}
+.box {
+  padding: 8px;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 6rem;
+  color:rgb(190, 240, 190);
+  font-style: oblique;
+}
+
+label,
+button {
+  font-size: 3rem;
+}
+button {
+  width: 20px;
+  height: 20px;
+}
