@@ -4,11 +4,11 @@
 
 --------------
 
-O trabalho propoe a criação de um site de e-commerce de jogos (Shop-Game)
+O trabalho propoe a criação de um site de e-commerce de jogos (My-Game)
 
 ### Resumo
 
-  O trabalho tem o objetivo de aplicar os conhecimentos adquiridos na matéria de Sistemas Web I e conhecimentos prévios para a criação de uma aplicação de uma loja virtual de jogos de nome Shop-Game. A compra de produtos em lojas virtuais, principalmente de jogos já é uma prática comum e que abre margem para a criação de sites intuitivos e que buscam facilitar o processo de compra do consumidor. A aplicação que será desenvolvida tem o intuito de conseguir aplicar funcionalidades básicas, comuns em lojas de e-commerce como Amazon, Magazine Luiza, Mercado Livre entre outros (como Cadastro do usuário, Carrinho de Compras, Criação do Pedido e Histórico do Pedido). Com o desenvolvimento do mesmo espera-se aprimorar os conhecimentos nas linguagens e tecnologias aplicadas e criar uma aplicação que possa ter incremento de funcionalidades posteriormente.
+  O trabalho tem o objetivo de aplicar os conhecimentos adquiridos na matéria de Sistemas Web I e conhecimentos prévios para a criação de uma aplicação de uma loja virtual de jogos de nome My-Game. A compra de produtos em lojas virtuais, principalmente de jogos já é uma prática comum e que abre margem para a criação de sites intuitivos e que buscam facilitar o processo de compra do consumidor. A aplicação que será desenvolvida tem o intuito de conseguir aplicar funcionalidades básicas, comuns em lojas de e-commerce como Amazon, Magazine Luiza, Mercado Livre entre outros (como Cadastro do usuário, Carrinho de Compras, Criação do Pedido e Histórico do Pedido). Com o desenvolvimento do mesmo espera-se aprimorar os conhecimentos nas linguagens e tecnologias aplicadas e criar uma aplicação que possa ter incremento de funcionalidades posteriormente.
 
 <!-- Apresentar o tema. -->
 ### 1. Tema
@@ -49,7 +49,7 @@ Mais funcionalidades podem ser implementadas ou removidas durante o decorrer do 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
 
-  Foram adicionadas na pasta "/Projeto/shop-game/prototipo" as imagens representando os protótipos das telas de:
+  Foram adicionadas na pasta "/Projeto/My-game/prototipo" as imagens representando os protótipos das telas de:
   - Home
   - Detalhes do item
   - Carrinho de compras
