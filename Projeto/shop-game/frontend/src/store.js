@@ -1,16 +1,32 @@
-import { legacy_createStore, compose, applyMiddleware, combineReducers } from 'redux';
+import {
+  legacy_createStore,
+  compose,
+  applyMiddleware,
+  combineReducers
+} from 'redux';
 import thunk from 'redux-thunk';
-import { productListReducer } from './reducers/productReducers';
-
-const initialState = {};
+import { cartReducer } from './reducers/cartReducers';
+import {
+  productDetailsReducer,
+  productListReducer,
+} from './reducers/productReducers';
+const initialState = {
+  cart: {
+    cartItems: localStorage.getItem('cartItems')
+      ? JSON.parse(localStorage.getItem('cartItems'))
+      : [],
+  },
+};
 const reducer = combineReducers({
   productList: productListReducer,
-});
-const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+  productDetails: productDetailsReducer,
+  cart: cartReducer,
+})
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 const store = legacy_createStore(
   reducer,
   initialState,
   composeEnhancer(applyMiddleware(thunk))
-);
+)
 
-export default store;
+export default store
