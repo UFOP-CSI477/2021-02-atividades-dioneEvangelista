@@ -1,14 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams} from 'react-router-dom';
 import Rating from '../components/Rating';
 import data from '../data';
 
 
 export default function ProductScreen(props) {
   const { id } = useParams();
-  const produto = data.products.find((x) => x._id === id);
-  // const product = data.products.find((x) => Number(x._id) === Number(props.match.params.id)) ;
-  // const product = data.products.find((x) => x._id === props.match.params.id);
+  const product = data.products.find((x) => x._id === id);
   if (!product) {
     return <div> Product Not Found</div>;
   }
@@ -30,7 +28,7 @@ export default function ProductScreen(props) {
                 numReviews={product.numReviews}
               ></Rating>
             </li>
-            <li>Pirce : ${product.price}</li>
+            <li>Price : ${product.price}</li>
             <li>
               Description:
               <p>{product.description}</p>
@@ -53,7 +51,7 @@ export default function ProductScreen(props) {
                     {product.countInStock > 0 ? (
                       <span className="success">In Stock</span>
                     ) : (
-                      <span className="error">Unavailable</span>
+                      <span className="danger">Unavailable</span>
                     )}
                   </div>
                 </div>
