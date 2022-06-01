@@ -18,8 +18,6 @@ function App() {
             </Link>
           </div>
           <div>
-            <a href="/cart">Carrinho</a>
-            <a href="/signin">Realizar login!</a>
             <Link to="/cart">
               Cart
               {cartItems.length > 0 && (
