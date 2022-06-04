@@ -1,25 +1,46 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { signin } from '../actions/userActions';
+import LoadingBox from '../components/LoadingBox';
+import MessageBox from '../components/MessageBox';
 
-export default function SigninScreen() {
+export default function SigninScreen(props) {
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  const { search } = useLocation();
+  const redirectInUrl = new URLSearchParams(search).get('redirect');
+  const redirect = redirectInUrl ? redirectInUrl : '/';
+
+  const userSignin = useSelector((state) => state.userSignin);
+  const { userInfo, loading, error } = userSignin;
+
+  const dispatch = useDispatch();
   const submitHandler = (e) => {
     e.preventDefault();
-    // TODO: sign in action
+    dispatch(signin(email, password));
   };
+  useEffect(() => {
+    if (userInfo) {
+      navigate(redirect);
+    }
+  }, [navigate, redirect, userInfo]);
   return (
     <div>
       <form className="form" onSubmit={submitHandler}>
         <div>
           <h1>Login</h1>
         </div>
+        {loading && <LoadingBox></LoadingBox>}
+        {error && <MessageBox variant="danger">{error}</MessageBox>}
         <div>
-          <label htmlFor="email">Endereço de Email</label>
+          <label htmlFor="email">Endereço de E-mail</label>
           <input
             type="email"
             id="email"
-            placeholder="Informe seu e-mail"
+            placeholder="Informe o email"
             required
             onChange={(e) => setEmail(e.target.value)}
           ></input>
@@ -29,7 +50,7 @@ export default function SigninScreen() {
           <input
             type="password"
             id="password"
-            placeholder="Informe sua senha"
+            placeholder="Informe a senha"
             required
             onChange={(e) => setPassword(e.target.value)}
           ></input>
@@ -37,13 +58,16 @@ export default function SigninScreen() {
         <div>
           <label />
           <button className="primary" type="submit">
-            Login
+            Fazer Login
           </button>
         </div>
         <div>
           <label />
           <div>
-            Novo na nossa loja? <Link to="/register">Crie sua conta</Link>
+            Novo na loja?{' '}
+            <Link to={`/register?redirect=${redirect}`}>
+              Crie a sua conta
+            </Link>
           </div>
         </div>
       </form>
