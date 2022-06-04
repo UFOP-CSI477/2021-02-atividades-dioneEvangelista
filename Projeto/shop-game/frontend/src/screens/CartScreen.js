@@ -101,7 +101,7 @@ export default function CartScreen(props) {
                 className="primary block"
                 disabled={cartItems.length === 0}
               >
-                Realize Login
+                Continuar
               </button>
             </li>
           </ul>
