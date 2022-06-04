@@ -1,10 +1,17 @@
 import express from 'express';
 import mongoose from 'mongoose';
 // import data from './data.js';
+import dotenv from 'dotenv';
 import productRouter from './routers/productRouter.js';
 import userRouter from './routers/userRouter.js';
 
+
+dotenv.config();
+
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 mongoose.connect('mongodb://localhost/shop-game', {
 });
 // Utilizado para pegar os produtos do arquivo js, agora vai pegar do banco usando a rota

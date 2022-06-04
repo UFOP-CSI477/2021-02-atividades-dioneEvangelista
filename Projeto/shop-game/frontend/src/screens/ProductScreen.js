@@ -52,7 +52,7 @@ export default function ProductScreen(props) {
                 </li>
                 <li>Pirce : ${product.price}</li>
                 <li>
-                  Description:
+                  Descrição:
                   <p>{product.description}</p>
                 </li>
               </ul>
@@ -62,7 +62,7 @@ export default function ProductScreen(props) {
                 <ul>
                   <li>
                     <div className="row">
-                      <div>Price</div>
+                      <div>Preço</div>
                       <div className="price">${product.price}</div>
                     </div>
                   </li>
@@ -71,9 +71,9 @@ export default function ProductScreen(props) {
                       <div>Status</div>
                       <div>
                         {product.countInStock > 0 ? (
-                          <span className="success">In Stock</span>
+                          <span className="success">Em estoque</span>
                         ) : (
-                          <span className="danger">Unavailable</span>
+                          <span className="danger">Indisponível</span>
                         )}
                       </div>
                     </div>
@@ -82,7 +82,7 @@ export default function ProductScreen(props) {
                     <>
                       <li>
                         <div className="row">
-                          <div>Qty</div>
+                          <div>Qtd</div>
                           <div>
                             <select
                               value={qty}
@@ -104,7 +104,7 @@ export default function ProductScreen(props) {
                           onClick={addToCartHandler}
                           className="primary block"
                         >
-                          Add to Cart
+                          Adicionar ao carrinho
                         </button>
                       </li>
                     </>

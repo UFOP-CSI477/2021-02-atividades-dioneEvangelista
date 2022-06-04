@@ -33,10 +33,10 @@ export default function CartScreen(props) {
     return (
       <div className="row top">
       <div className="col-2">
-        <h1>Shopping Cart</h1>
+        <h1>Carrinho de compras</h1>
         {cartItems.length === 0 ? (
           <MessageBox>
-            Cart is empty. <Link to="/">Go Shopping</Link>
+            Carrinho Vazio. <Link to="/">Vá as compras</Link>
           </MessageBox>
         ) : (
           <ul>
@@ -75,7 +75,7 @@ export default function CartScreen(props) {
                     type="button"
                     onClick={() => removeFromCartHandler(item.product)}
                   >
-                    Delete
+                    Remover
                   </button>
                 </div>
               </div>
@@ -90,7 +90,7 @@ export default function CartScreen(props) {
           <li>
             <h2>
               Subtotal ({cartItems.reduce((a, c) => a + c.qty, 0)} items) : $
-              {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}
+              {cartItems.reduce((a, c) => a + c.price * c.qty, 0).toFixed(2)}
             </h2>
           </li>
           <li>
@@ -100,7 +100,7 @@ export default function CartScreen(props) {
               className="primary block"
               disabled={cartItems.length === 0}
             >
-              Proceed to Checkout
+              Faça login para continuar...
             </button>
           </li>
         </ul>
