@@ -12,6 +12,8 @@ import PaymentMethodScreen from './screens/PaymentMethodScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
 import OrderHistoryScreen from './screens/OrderHistoryScreen';
+import ProfileScreen from './screens/ProfileScreen';
+import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -22,7 +24,6 @@ function App() {
   const signoutHandler = () => {
     dispatch(signout());
   };
-
 
   return (
     <BrowserRouter>
@@ -50,6 +51,9 @@ function App() {
                     <Link to="/orderhistory">Histórico</Link>
                   </li>
                   <li>
+                    <Link to="/profile">Perfil</Link>
+                  </li>
+                  <li>
                     <Link to="#signout" onClick={signoutHandler}>
                       Deslogar
                     </Link>
@@ -72,6 +76,14 @@ function App() {
           <Route path="/payment" element={<PaymentMethodScreen/>}></Route>
           <Route path="/placeorder" element={<PlaceOrderScreen/>}></Route>
           <Route path="/order/:id" element={<OrderScreen/>}></Route>
+          <Route
+              path="/profile"
+              element={
+                <PrivateRoute>
+                  <ProfileScreen />
+                </PrivateRoute>
+              }
+            />
           <Route
               path="/orderhistory"
               element={<OrderHistoryScreen/>}
