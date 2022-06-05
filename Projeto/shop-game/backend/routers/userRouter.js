@@ -31,7 +31,7 @@ userRouter.post(
         return;
       }
     }
-    res.status(401).send({ message: 'Invalid email or password' });
+    res.status(401).send({ message: 'Email ou senha inválidos' });
   })
 );
 userRouter.post(
@@ -59,7 +59,7 @@ userRouter.get(
     if (user) {
       res.send(user);
     } else {
-      res.status(404).send({ message: 'User Not Found' });
+      res.status(404).send({ message: 'Usuário não encontrado' });
     }
   })
 );

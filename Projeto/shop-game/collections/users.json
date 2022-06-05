@@ -1,0 +1,58 @@
+[{
+  "_id": {
+    "$oid": "629b956bb0e15067cdb2a5cd"
+  },
+  "name": "Dione",
+  "email": "admin@example.com",
+  "password": "$2a$08$meEAVbfhFXJhkKAh2s9Jt.BF/zU0p5peWGdnP5b1icXoOlzM1zYl2",
+  "isAdmin": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654363499603"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654436555245"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "629b956bb0e15067cdb2a5ce"
+  },
+  "name": "Consumidor1",
+  "email": "user@example.com",
+  "password": "$2a$08$A7k3cYdefhbnEhKom8G6PereCskcemC1I9ZTrNwjVETrit3m/iIau",
+  "isAdmin": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654363499603"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654432742811"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "629b956bb0e15067cdb2a5cf"
+  },
+  "name": "Consumidor2",
+  "email": "user2@example.com",
+  "password": "$2a$08$KXe/0qJudJRFO2qJucRdxeiiC5PiVJL8AXv9/gQ1bI5TfZ8N22oei",
+  "isAdmin": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654363499603"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654363499603"
+    }
+  }
+}]

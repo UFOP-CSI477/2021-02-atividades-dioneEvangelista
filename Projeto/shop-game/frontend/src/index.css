@@ -39,7 +39,7 @@ footer {
   background-color: rgb(213,18, 18);
   color: #ffffff;
 }
-/* Common */
+/*Comum*/
 h1 {
   font-size: 1.8rem;
   padding: 1rem 0;
@@ -136,7 +136,7 @@ a.brand {
   min-width: 30rem;
 }
 
-/* Image */
+/* Imagem */
 img {
   border-radius: 0.5rem;
 }
@@ -151,7 +151,7 @@ img.medium {
 img.large {
   width: 80%;
 }
-/* Card */
+/* Carrinho (card) */
 .card {
   border: 0.1rem #c0c0c0 solid;
   background-color: #f8f8f8;
@@ -167,7 +167,7 @@ img.large {
 .price {
   font-size: 2rem;
 }
-/* Rating */
+/* Avaliações (rating) */
 .rating span {
   color: #f0c040;
   margin: 0.1rem;
@@ -176,7 +176,7 @@ img.large {
   color: #404040;
 }
 
-/* Alert */
+/* Alertas */
 .success {
   color: #20a020;
 }
@@ -197,7 +197,7 @@ img.large {
   background-color: #ffe0e0;
 }
 
-/* Form */
+/* Formulário */
 .form {
   max-width: 60rem;
   margin: 0 auto;
@@ -256,7 +256,7 @@ button.small {
   font-size: 1.2rem;
 }
 
-/* Table */
+/* Tabelas */
 .table {
   width: 100%;
   border-collapse: collapse;

@@ -1,0 +1,295 @@
+[{
+  "_id": {
+    "$oid": "629bb4f24b207dd146c36806"
+  },
+  "orderItems": [
+    {
+      "name": "Persona 5",
+      "qty": 1,
+      "image": "/images/f10.jpg",
+      "price": 60,
+      "product": {
+        "$oid": "629b42def6bbd2190ca55b55"
+      },
+      "_id": {
+        "$oid": "629bb4f24b207dd146c36807"
+      }
+    }
+  ],
+  "shippingAddress": {
+    "fullName": "Usuario Teste ",
+    "address": "Rua teste, sem número",
+    "city": "Teste",
+    "postalCode": "35938666",
+    "country": "Brasil"
+  },
+  "paymentMethod": "PayPal",
+  "itemsPrice": 60,
+  "shippingPrice": 10,
+  "totalPrice": 70,
+  "user": {
+    "$oid": "629b956bb0e15067cdb2a5cd"
+  },
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654371570072"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654371570072"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629c9cfcc609caf7a4fc138d"
+  },
+  "orderItems": [
+    {
+      "name": "The Witcher 3: Wild Hunt",
+      "qty": 2,
+      "image": "/images/f3.jpg",
+      "price": 60,
+      "product": {
+        "$oid": "629b42def6bbd2190ca55b4e"
+      },
+      "_id": {
+        "$oid": "629c9cfcc609caf7a4fc138e"
+      }
+    },
+    {
+      "name": "The Last of Us: Part II",
+      "qty": 1,
+      "image": "/images/f6.jpg",
+      "price": 200,
+      "product": {
+        "$oid": "629b42def6bbd2190ca55b51"
+      },
+      "_id": {
+        "$oid": "629c9cfcc609caf7a4fc138f"
+      }
+    }
+  ],
+  "shippingAddress": {
+    "fullName": "Dione W",
+    "address": "Rua Teste, Bairro Teste",
+    "city": "Cidade Teste",
+    "postalCode": "35385-000",
+    "country": "Brasil"
+  },
+  "paymentMethod": "PayPal",
+  "itemsPrice": 320,
+  "shippingPrice": 0,
+  "totalPrice": 320,
+  "user": {
+    "$oid": "629b956bb0e15067cdb2a5cd"
+  },
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654430972624"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654430972624"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629ca35c61f4cff8525f82a2"
+  },
+  "orderItems": [
+    {
+      "name": "God of War",
+      "qty": 2,
+      "image": "/images/f5.jpg",
+      "price": 79.9,
+      "product": {
+        "$oid": "629b42def6bbd2190ca55b50"
+      },
+      "_id": {
+        "$oid": "629ca35c61f4cff8525f82a3"
+      }
+    },
+    {
+      "name": "Forza Horizon 5",
+      "qty": 1,
+      "image": "/images/f1.jpg",
+      "price": 189.99,
+      "product": {
+        "$oid": "629b42def6bbd2190ca55b4c"
+      },
+      "_id": {
+        "$oid": "629ca35c61f4cff8525f82a4"
+      }
+    }
+  ],
+  "shippingAddress": {
+    "fullName": "Dione W",
+    "address": "Rua Teste, Bairro Teste",
+    "city": "Cidade Teste",
+    "postalCode": "35385-000",
+    "country": "Brasil"
+  },
+  "paymentMethod": "Pix",
+  "itemsPrice": 349.79,
+  "shippingPrice": 0,
+  "totalPrice": 349.79,
+  "user": {
+    "$oid": "629b956bb0e15067cdb2a5ce"
+  },
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654432604718"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654432604718"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629ca3c261f4cff8525f82b4"
+  },
+  "orderItems": [
+    {
+      "name": "Persona 5",
+      "qty": 2,
+      "image": "/images/f10.jpg",
+      "price": 60,
+      "product": {
+        "$oid": "629b42def6bbd2190ca55b55"
+      },
+      "_id": {
+        "$oid": "629ca3c261f4cff8525f82b5"
+      }
+    }
+  ],
+  "shippingAddress": {
+    "fullName": "Dione W",
+    "address": "Rua Teste, Bairro Teste",
+    "city": "Cidade Teste",
+    "postalCode": "35385-000",
+    "country": "Brasil"
+  },
+  "paymentMethod": "PayPal",
+  "itemsPrice": 120,
+  "shippingPrice": 0,
+  "totalPrice": 120,
+  "user": {
+    "$oid": "629b956bb0e15067cdb2a5ce"
+  },
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654432706910"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654432706910"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629cb25e03180050de401b80"
+  },
+  "orderItems": [
+    {
+      "name": "Forza Horizon 5",
+      "qty": 3,
+      "image": "/images/f1.jpg",
+      "price": 189.99,
+      "product": {
+        "$oid": "629b42def6bbd2190ca55b4c"
+      },
+      "_id": {
+        "$oid": "629cb25e03180050de401b81"
+      }
+    }
+  ],
+  "shippingAddress": {
+    "fullName": "Dione W",
+    "address": "Rua Teste, Bairro Teste",
+    "city": "Cidade Teste",
+    "postalCode": "35385-000",
+    "country": "Brasil"
+  },
+  "paymentMethod": "Pix",
+  "itemsPrice": 569.97,
+  "shippingPrice": 0,
+  "totalPrice": 569.97,
+  "user": {
+    "$oid": "629b956bb0e15067cdb2a5cd"
+  },
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654436446051"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654436446051"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629cb2ac03180050de401b8d"
+  },
+  "orderItems": [
+    {
+      "name": "Halo Infinite",
+      "qty": 1,
+      "image": "/images/f9.jpg",
+      "price": 250,
+      "product": {
+        "$oid": "629b42def6bbd2190ca55b54"
+      },
+      "_id": {
+        "$oid": "629cb2ac03180050de401b8e"
+      }
+    }
+  ],
+  "shippingAddress": {
+    "fullName": "Dione W",
+    "address": "Rua Teste, Bairro Teste",
+    "city": "Cidade Teste",
+    "postalCode": "35385-000",
+    "country": "Brasil"
+  },
+  "paymentMethod": "Pix",
+  "itemsPrice": 250,
+  "shippingPrice": 0,
+  "totalPrice": 250,
+  "user": {
+    "$oid": "629b956bb0e15067cdb2a5cd"
+  },
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654436524942"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654436524942"
+    }
+  },
+  "__v": 0
+}]
