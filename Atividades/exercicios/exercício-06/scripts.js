@@ -1,5 +1,4 @@
 var pessoa;
-
 function Pessoa(pnome,snome,rua,bairro,cidade,estado,tel,email,inputfile)
 {
   this.pnome=pnome;
@@ -30,4 +29,3 @@ window.alert("Preencher dados corretamente, algum campo está vazio")
 else
   window.alert("Dados preenchidos com sucesso!")
 }
-

@@ -1,3 +1,5 @@
+<?php ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Página Home (Principal) estilizada com CSS, exercício 002 das atividades da máteria Sistemas Web I"/>
+        content="Página Home (Principal) rodando em servidor php Sistemas Web I"/>
         
     <meta name="author" content="Dione Willy Evangelista" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -74,3 +76,4 @@
 </body>
 
 </html>
+

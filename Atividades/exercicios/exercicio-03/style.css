@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
 
 * {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-body{
-    background-color: rgb(230, 230, 248);
+
+html {
+    background-color: rgb(18, 18, 20);
 }
 h1,h2{
-    color: white;
+    color: black;
 }
-
+h2{
+    margin: 10px;
+}
 /* Initial */
 .int {
     border: 1px solid white;
@@ -35,45 +39,83 @@ h1,h2{
     margin: 10px;
     font-size: 2.5rem;
 }
+section{
+    margin: 10px;
+}
 
+#my-info{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+address{
+    margin: 20px;
+}
 /*Menu */
+/* nav,
+ul {
+    margin: 20px;
+    align-items: center;
+}
 
+li {
+    display: inline;
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+} */
 
 /* Header */
 header {
     border-bottom: 1px silver solid;
-    background-color: rgb(55, 55, 84);
+}
+header a {
+    color: black;
+    padding: 1rem;
 }
 
 footer{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 50px;
+    background-color: black;
+}
+footer p{
+    color:white;
+    font-family: 'Fascinate', cursive;
+    font-size: 22px;
+    margin: 20px;
     text-align: center;
 }
-
 img{
     width: 100%;
     height: 100%;
 }
 
-/* Div com dados e foto do perfil */
-div#my-info{
-margin: 20px 80px 20px 80px;  
-border: solid purple 2px;
-padding: 10px;
-display: flex;
-align-items: center;
-}
-
 #user_img{
-    width: 10%;
-    height: 20%;
-    border: purple 1px solid;
+width: 200px;
+height: 300px;
+border: solid white 1px;
 }
 
 /* Tabela */
 table{
-    margin: 2px;
-    width: 98%;
-    }
+margin: 2px;
+width: 100%;
+height: 100%;
+}
     table, th, tr, td{
     border: 1px solid white;
     text-align: center;
@@ -82,23 +124,14 @@ table{
     color: white;
     }
 
-/* Formulario */
-form {
-    color: black;
-    margin: 10px;
+.form{
+     margin: 20px;
+    }
+.form fieldset{
+    margin: 15px;
 }
 
-fieldset {
-    background-color: #eeeeee;
+.ttable,.out{
+    margin: 15px;
+    text-align: center;
 }
-
-legend {
-    background-color: gray;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10%;
-}
-input {
-    margin: 5px;
-}
-

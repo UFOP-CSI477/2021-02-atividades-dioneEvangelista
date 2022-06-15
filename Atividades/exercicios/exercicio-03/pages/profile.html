@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Página Profile (Perfil) estilizada com CSS utilizando framework Bootstrap. Exercício 03 de Sistemas Web I." />
+        content="Página Profile (Perfil) estilizada com CSS, exercício 002 das atividades da máteria Sistemas Web I"/>
     <meta name="author" content="Dione Willy Evangelista" />
     <title>Perfil</title>
     <link rel="stylesheet" href="../style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 
 <body>
@@ -24,44 +24,55 @@
         </div>
     </div>
     <header>
-        <ul class="nav nav-tabs nav-justified">
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
+        <div>
+          <nav class="nav justify-content-center">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html">Home</a>
+              </li>
+              <li>
                 <a class="nav-link" href="states.html">Estados</a>
-            </li>
-            <li class="nav-item">
+              </li>
+              <li>
                 <a class="nav-link" href="cities.html">Cidades</a>
-            </li>
-            <li class="nav-item">
+              </li>
+              <li>
                 <a class="nav-link" href="products.html">Produtos</a>
-            </li>
-            <li class="nav-item">
+              </li>
+              <li>
                 <a class="nav-link" href="people.html">Pessoas</a>
-            </li>
-            <li class="nav-item">
+              </li>
+              <li>
                 <a class="nav-link" href="shopping.html">Compras</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="form.html">Formulário</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="report.html">Relatório</a>
-            </li>
-            <li class="nav-item">
+              </li>
+              <li>
                 <a class="nav-link" href="profile.html">Perfil</a>
-            </li>
-        </ul>
-    </header>
+              </li>
+              <li>
+                <a class="nav-link" href="form.html">Formulario</a>
+              </li>
+              <li>
+                <a class="nav-link" href="report.html">Relatório</a>
+              </li>
+              <li>
+                <a class="nav-link" href="logout.html">Sair</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     <section>
+        <h2>Dados</h2>
         <div id="my-info">
-            <h2>Dados</h2>
             <address>
-                <p><strong>Dione Willy Evangelista</strong>
-                    <br>Email: dione.evangelista@aluno.ufop.edu.com
-                    <br>Rua São Domingos do Prata, N° 90, Bairro Bandeirantes, Bela Vista de Minas - MG
-
+                <p>Aluno: <strong>Dione Willy Evangelista</strong>
+                    <br>Email: <strong>dione.evangelista@aluno.ufop.edu.com</strong> 
+                    <br>Rua: <strong>São Domingos do Prata, N° 90, Bairro Bandeirantes, Bela Vista de Minas - MG</strong> 
+                     
+                    <br>
+                    <br>
+                    Foto do sujeito...
+                    <br>
                 <div id='user_img'>
                     <img src="../img/user-1.jpeg" width="10%" />
                 </div>

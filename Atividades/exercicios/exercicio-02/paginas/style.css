@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Updock&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgb(230, 230, 248);
+}
+h1,h2{
+    color: white;
+}
+
+/* Initial */
+.int {
+    border: 1px solid white;
+    background-color: rgb(41, 41, 46);
+    display: flex;
+}
+
+.int-content {
+    display: flex;
+    align-items: center;
+}
+
+.int-content img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 20px 10px 35px;
+}
+
+.int h1 {
+    color: white;
+    margin: 10px;
+    font-size: 2.5rem;
+}
+
+/*Menu */
+
+
+/* Header */
+header {
+    border-bottom: 1px silver solid;
+    background-color: rgb(55, 55, 84);
+}
+
+footer{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Div com dados e foto do perfil */
+div#my-info{
+margin: 20px 80px 20px 80px;  
+border: solid purple 2px;
+padding: 10px;
+display: flex;
+align-items: center;
+}
+
+#user_img{
+    width: 10%;
+    height: 20%;
+    border: purple 1px solid;
+}
+
+/* Tabela */
+table{
+    margin: 2px;
+    width: 98%;
+    }
+    table, th, tr, td{
+    border: 1px solid white;
+    text-align: center;
+    margin: 5px;
+    padding:3px;
+    color: white;
+    }
+
+/* Formulario */
+form {
+    color: black;
+    margin: 10px;
+}
+
+fieldset {
+    background-color: #eeeeee;
+}
+
+legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10%;
+}
+input {
+    margin: 5px;
+}
+

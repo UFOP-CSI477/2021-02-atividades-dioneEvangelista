@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sistemas Web I Exercício 5 API." />
+    <meta name="author" content="Dione Willy Evangelista" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="api.js"></script>
+    <title>Carregamento de API</title>
+  </head>
+
+  <body>
+    <div>
+      <header>
+        <div class="flexb">
+          <h1>Utilizando a API do IBGE para carregar informação</h1>
+        </div>
+      </header>
+
+      <section class="flexb">
+        <form action="">
+          <input
+            type="button"
+            value="Carregar dados do IBGE"
+            onclick="carregarPaises()"
+            class="btn btn-primary"
+          />
+          <div class="form-group">
+          <select name="paises" id="paises" onchange="carregarEstados()">
+            <option value="">Selecione o país:</option>
+          </select>
+         </div>
+          <div class="form-group">   
+          <select name="estados" id="estados" onchange="carregarCidades()">
+            <option value="">Selecione o estado:</option>
+          </select>
+        </div>
+          <div class="form-group">
+          <select name="cidades" id="cidades">
+            <option value="">Selecione a cidade:</option>
+          </select>
+         </div>
+        </form>
+      </section>
+      <footer>
+        <div>
+          <p>Exercício em Sistemas Web I - Dione W.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

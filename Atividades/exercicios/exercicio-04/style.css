@@ -1,3 +1,30 @@
 body {
     margin:  10px;
 }
+footer{
+    text-align: center;
+}
+/* Estilização do form do exercício 4 */
+form {
+    font-size:medium;
+}
+form div{
+margin: 10px;
+}
+
+form input{
+    margin:5px;
+}
+
+form label{
+    margin:5px;
+}
+
+/* Estilização do exercicio 5 - API */
+
+.flexb{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
