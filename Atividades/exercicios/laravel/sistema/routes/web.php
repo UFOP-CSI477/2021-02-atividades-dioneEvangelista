@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Estado;
+use App\Models\Produto;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,27 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/estados', function(){
+    return Estado::all();
+});
+Route::get('/estados/{id}', function($id){
+   $estado =  Estado::findOrFail($id);
+
+    if ($estado == null){
+        return 'ID invalido';
+    }
+    return $estado;
+});
+
+Route::get('/produtos', function(){
+   $produtos = Produto::all();
+   return view('produtos',['produtos'=>$produtos]);
+
+});
+
+Route::get('/produtos/{id}', function($id){
+    $produto = Produto::findOrFail($id);
+    return view('produtos_id',['produto'=>$produto]);
+ 
+ });
