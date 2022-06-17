@@ -15,7 +15,7 @@ use App\Models\Produto;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/estados', function(){

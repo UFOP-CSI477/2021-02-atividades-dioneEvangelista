@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    background-color: rgb(18, 18, 20);
+}
+h1,h2{
+    color: black;
+}
+h2{
+    margin: 10px;
+}
+/* Initial */
+.int {
+    border: 1px solid white;
+    background-color: rgb(41, 41, 46);
+    display: flex;
+}
+
+.int-content {
+    display: flex;
+    align-items: center;
+}
+
+.int-content img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 20px 10px 35px;
+}
+
+.int h1 {
+    color: white;
+    margin: 10px;
+    font-size: 2.5rem;
+}
+section{
+    margin: 10px;
+}
+
+#my-info{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+address{
+    margin: 20px;
+}
+/*Menu */
+/* nav,
+ul {
+    margin: 20px;
+    align-items: center;
+}
+
+li {
+    display: inline;
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+} */
+
+/* Header */
+header {
+    border-bottom: 1px silver solid;
+}
+header a {
+    color: black;
+    padding: 1rem;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 50px;
+    background-color: black;
+}
+footer p{
+    color:white;
+    font-family: 'Fascinate', cursive;
+    font-size: 22px;
+    margin: 20px;
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+#user_img{
+width: 200px;
+height: 300px;
+border: solid white 1px;
+}
+
+/* Tabela */
+table{
+margin: 2px;
+width: 100%;
+height: 100%;
+}
+    table, th, tr, td{
+    border: 1px solid white;
+    text-align: center;
+    margin: 5px;
+    padding:3px;
+    color: white;
+    }
+
+.form{
+     margin: 20px;
+    }
+.form fieldset{
+    margin: 15px;
+}
+
+.ttable,.out{
+    margin: 15px;
+    text-align: center;
+}

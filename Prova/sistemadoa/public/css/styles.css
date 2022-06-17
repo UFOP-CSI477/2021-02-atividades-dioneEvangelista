@@ -1,0 +1,180 @@
+* {
+  font-family: 'Roboto';
+}
+/* Icone do Cabeçalho */
+#core{
+ width: 50px;
+}
+#home{
+  text-decoration: none;
+  color: white;
+}
+/* Geral */
+body{
+min-height: 100vh;
+padding-bottom: 100px;
+position: relative;
+
+}
+header{
+ background-color: #fff;
+ border-bottom: 1px solid #ccc;
+}
+
+.row {
+  margin:0;
+}
+
+.container-fluid{
+padding: 0;
+}
+
+.btn-primary{
+  background-color: #f2a340;
+  border: 2px solid #c28008;
+}
+
+.btn-primary:hover{
+  background-color: #f2a340;
+  border-color: #c28008;
+}
+
+/* Search Container */
+
+#search-container{
+  background-image: url("../img/home-bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  padding: 50px;
+  text-align: center;
+}
+
+#search-container h1{
+  color:black;
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+
+#search-container form{
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Lista de Entidades */
+#entidades-container{
+  padding: 50px;
+}
+#entidades-container h2{
+  margin-bottom: 10px;
+  color:black;
+}
+#entidades-container .subtitle{
+  color:black;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+#cards-container{
+  display: flex;
+}
+#entidades-container .card{
+  flex: 1 1 24%;
+  max-width: 25%;
+  border-radius: 10px;
+  padding: 0;
+  margin: .5%;
+}
+
+#entidades-container img{
+  max-height: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .card-date{
+  font-size: 12px;
+  color: #ccc;
+}
+.card .card-title{
+  color:black;
+  font-size: 20px;
+  font-weight: 700;
+}
+.card .card-participants{
+  color:black;
+  font-size: 14px;
+}
+
+footer{
+  text-align: center;
+  background-color: #343A40;
+  color: white;
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p{
+  margin-bottom: 0;
+}
+
+
+/* Home  */
+#home-container{
+background-image: url("../img/home-bg.jpg");
+background-size: cover;
+background-position: center;
+width: 100vw;
+height: 100vh;
+margin-top: 15px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-flow: column;
+}
+
+#home-container h1{
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 80px;
+  color: white;
+}
+
+
+#item-create-container{
+  padding: 30px;
+}
+#item-create-container label{
+  font-weight: bold;
+}
+
+#item-create-container input{
+  font-size: 12px;
+}
+
+/* Mensagem */
+
+.msg{
+  background-color: #d4edda;
+  color:#155724;
+  border:1px solid #C3E6CB;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.msgno{
+  background-color: #e9b6c2;
+  color:#000000;
+  border:1px solid #C3E6CB;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.form-line-edit{
+  display: inline-block;
+}
